@@ -4,6 +4,11 @@ module.exports = {
 		if (progression.length == 0){
 			return 0;
 		}
+
+		if (progression.length <= 2){
+			return -1;
+		}
+
 		var a = progression[0];
 		var b = progression[1];
 		var c = progression[2];

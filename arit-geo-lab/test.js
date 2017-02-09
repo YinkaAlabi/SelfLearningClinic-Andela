@@ -60,5 +60,19 @@
       });
       
     });
+
+    describe("Case for an array with one or two elements", function() {
+
+      it("should return -1 for an array with single element", function() {
+        expect(myCode.aritGeo([10])).toEqual(-1);
+      });
+
+      //An array with just 2 elements cannot exactly be called an Arithmetic or Geometric
+      it("should return -1 for an array with single element", function() {
+        expect(myCode.aritGeo([10])).toEqual(-1);
+      });
+
+    });
+
   });
 })();
