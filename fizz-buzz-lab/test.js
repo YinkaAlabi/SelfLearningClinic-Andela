@@ -1,6 +1,6 @@
 var myCode = require('./code.js');
 
-describe("Fizz Buzz tests ", function() {
+describe("Fizz Buzz tests", function() {
 
   it("should return `Fizz` for number divisible by 3", function() {
     expect(myCode.fizzBuzz(3)).toBe('Fizz');
@@ -34,4 +34,15 @@ describe("Fizz Buzz tests ", function() {
     expect(myCode.fizzBuzz(101)).toBe(101);
   });
 
+  it("should return 1 since its indivisible by 3 and 5", function() {
+    expect(myCode.fizzBuzz(1)).toBe(1);
+  });
+
+  it("should return 0 since its indivisible by 3 and 5", function() {
+    expect(myCode.fizzBuzz(0)).toBe(0);
+  });
+
+  it("should return 'Buzz' since its indivisible by 3 and 5", function() {
+    expect(myCode.fizzBuzz(25)).toBe('Buzz');
+  });
 });
